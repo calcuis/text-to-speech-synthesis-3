@@ -1,5 +1,4 @@
 higgs
-transformers>=4.45.1,<4.47.0
 dacite
 vector_quantize_pytorch
 pydub
