@@ -4,16 +4,15 @@ from typing import Union
 
 import numpy as np
 import torch
-from diao.audiotools import AudioSignal
-from diao.audiotools.ml import BaseModel
+from higgs.audiotools import AudioSignal
+from higgs.audiotools.ml import BaseModel
 from torch import nn
 
 from .base import CodecMixin
-from dac.nn.layers import Snake1d
-from dac.nn.layers import WNConv1d
-from dac.nn.layers import WNConvTranspose1d
-from dac.nn.quantize import ResidualVectorQuantize
-
+from higgs.dac.nn.layers import Snake1d
+from higgs.dac.nn.layers import WNConv1d
+from higgs.dac.nn.layers import WNConvTranspose1d
+from higgs.dac.nn.quantize import ResidualVectorQuantize
 
 def init_weights(m):
     if isinstance(m, nn.Conv1d):

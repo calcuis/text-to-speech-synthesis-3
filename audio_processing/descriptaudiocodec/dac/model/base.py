@@ -6,7 +6,7 @@ from typing import Union
 import numpy as np
 import torch
 import tqdm
-from diao.audiotools import AudioSignal
+from higgs.audiotools import AudioSignal
 from torch import nn
 
 SUPPORTED_VERSIONS = ["1.0.0"]

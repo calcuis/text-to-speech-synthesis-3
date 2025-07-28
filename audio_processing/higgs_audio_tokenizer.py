@@ -89,7 +89,8 @@ class HiggsAudioTokenizer(nn.Module):
             self.encoder_semantic_dim = 768
 
         elif semantic_techer == "hubert_base_general":
-            self.semantic_model = AutoModel.from_pretrained("bosonai/hubert_base", trust_remote_code=True)
+            # self.semantic_model = AutoModel.from_pretrained("bosonai/hubert_base", trust_remote_code=True)
+            self.semantic_model = AutoModel.from_pretrained("callgg/hubert-base", trust_remote_code=True)
             self.semantic_sample_rate = 16000
             self.semantic_dim = 768
             self.encoder_semantic_dim = 768
